@@ -1,4 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
+require('dotenv').config();
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -15,6 +16,7 @@ module.exports = {
   solidity: "0.8.17",
   networks: {
     goerli: {
+//      url: process.env.STAGING_QUICKNODE_KEY,
       url: process.env.STAGING_QUICKNODE_KEY,
       accounts: [process.env.TEST_PRIVATE_KEY]
     },

@@ -11,3 +11,6 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
+
+Testnet contract address: 0x5ae6135d22E5f889C53ff86B4714Ac594473630b
+Goerli contract address v2: 0x9618873D7b3eD19a3ceebBc40F631a7A7d0f0C91 (this one includes message capability)
