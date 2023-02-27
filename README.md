@@ -1,16 +1,12 @@
-# Sample Hardhat Project
+# Buildspace solidity project. Wave Portal
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This is my implementation of the buildspace solidity [tutorial project](https://buildspace.so/p/build-solidity-web3-app).
 
-Try running some of the following tasks:
+It allows the user to post messages onto the blockchain if they are on the whitelist of addresses. Whitelisted addresses can add other addresses to the whitelist. There is a two minute cool-down on posting a message to prevent spam. There is also a 1/4 chance that the message poster receives .0001 ETH!
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+Here is the front-end (runs on Goerli): https://replit.com/@heph789/chaselb-gated-waveportal#src/App.jsx
+
+Here is the demo video: 
 
 Testnet contract address: 0x5ae6135d22E5f889C53ff86B4714Ac594473630b
 Goerli contract address v2: 0x9618873D7b3eD19a3ceebBc40F631a7A7d0f0C91 (this one includes message capability)
