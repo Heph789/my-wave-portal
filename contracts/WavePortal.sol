@@ -49,7 +49,7 @@ contract WavePortal {
 
     function wave(string memory _message) public {
         require(whitelist[msg.sender] == true, "You aren't on the whitelist!");
-        require(lastTimeWaved[msg.sender] + 30 seconds < block.timestamp, "Wait 30 seconds!");
+        require(lastTimeWaved[msg.sender] + 2 minutes < block.timestamp, "Wait 2 minutes!");
 
         lastTimeWaved[msg.sender] = block.timestamp;
 
