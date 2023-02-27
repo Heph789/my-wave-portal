@@ -26,8 +26,21 @@ const main = async () => {
 
     await waveContract.addToWhitelist(randomPerson.address);
 
+
+
     waveTxn = await waveContract.connect(randomPerson).wave("Another message!");
     await waveTxn.wait(); // Wait for the transaction to be mined
+
+    try {
+      // should produce an error to wait 15 minutes
+      waveTxn = await waveContract.connect(randomPerson).wave("Another message!");
+      await waveTxn.wait(); // Wait for the transaction to be mined
+
+      waveTxn = await waveContract.connect(randomPerson).wave("Another message!");
+      await waveTxn.wait(); // Wait for the transaction to be mined
+    } catch (err) {
+      console.log("Error works properly: ", err.message);
+    }
 
     let allWaves = await waveContract.getAllWaves();
     console.log(allWaves);
