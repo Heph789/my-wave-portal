@@ -6,7 +6,7 @@ It allows the user to post messages onto the blockchain if they are on the white
 
 Here is the front-end (runs on Goerli): https://replit.com/@heph789/chaselb-gated-waveportal#src/App.jsx
 
-Here is the demo video: 
+Here is the demo video: https://twitter.com/0xdididoitright/status/1630163618649227267?s=20
 
 Testnet contract address: 0x5ae6135d22E5f889C53ff86B4714Ac594473630b
 Goerli contract address v2: 0x9618873D7b3eD19a3ceebBc40F631a7A7d0f0C91 (this one includes message capability)
